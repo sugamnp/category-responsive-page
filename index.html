@@ -32,8 +32,14 @@
 
     <!-- main container -->
     <div class="image-select">
-      <input type="file" class="upload-box" name="file" id="file"
-      accept="image/*" onchange="showPreview(event);"">
+      <input
+        type="file"
+        class="upload-box"
+        name="file"
+        id="file"
+        accept="image/*"
+        onchange="showPreview(event);"
+      />
       <label for="file"
         ><i class="fa fa-camera" aria-hidden="true"></i>&nbsp; Choose a photo
       </label>
@@ -43,45 +49,34 @@
     <div class="main-grid-con">
       <div class="gr left-grid">
         <div class="image-preview-container">
-          <div class="image-preview">
-            <img src="" alt="Image Preview" id="image-preview__image" />
-          </div>
+          <img src="" alt="Image Preview" class="def" />
         </div>
       </div>
       <div class="gr right-grid">
         <div class="functionality">
-          <div class="show-or-hide">
-            <input type="checkbox" id="showall" name="showall" />
-            <label for="showall"> Show all</label>
-          </div>
-          <div class="show-or-hide">
-            <input type="checkbox" id="hideall" name="hideall" />
-            <label for="hideall"> Hide all</label>
-          </div>
-          <div class="cat1">
+          <button class="btn1">Show all</button>
+          <br />
+          <button class="btn2">Hide all</button>
+          <br />
+          <div class="c1">
             <input
               type="checkbox"
-              id="category-1-all"
+              class="cat1"
               name="category-1-all"
-              onchange="cat1All();"
+              onchange="catEn()"
             />
             <label for="category-1-all"> Category 1</label><br />
-            <input type="checkbox" id="category-1-a" name="category-1-a" />
+            <input type="checkbox" class="cat1 sub s1" name="category-1-a" />
             <label for="category-1-a"> Sub cat 1</label><br />
-            <input type="checkbox" id="category-1-b" name="category-1-b" />
+            <input type="checkbox" class="cat1 sub s2" name="category-1-b" />
             <label for="category-1-b"> Sub cat 2</label><br />
           </div>
-          <div class="cat2">
-            <input
-              type="checkbox"
-              id="category-2-all"
-              name="category-2-all"
-              onchange="cat2All();"
-            />
+          <div class="c2">
+            <input type="checkbox" class="cat2" name="category-2-all" />
             <label for="category-2-all"> Category 2</label><br />
-            <input type="checkbox" id="category-2-a" name="category-2-a" />
+            <input type="checkbox" class="cat2 sub s3" name="category-2-a" />
             <label for="category-2-a"> Sub cat 1</label><br />
-            <input type="checkbox" id="category-2-b" name="category-2-b" />
+            <input type="checkbox" class="cat2 sub s4" name="category-2-b" />
             <label for="category-2-b"> Sub cat 2</label><br />
           </div>
         </div>
