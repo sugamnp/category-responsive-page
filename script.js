@@ -39,10 +39,28 @@ buttonHide.addEventListener("click", () => {
   }
 });
 
-function catEn() {
-  const categoryOne = document.querySelectorAll(".cat1");
-  console.log(categoryOne);
-  let checkState = categoryOne[0].checked;
-  categoryOne[1].checked = true;
-  categoryOne[2].checked = true;
+function catEn1() {
+  let ctg = document.querySelectorAll(".cat1");
+  console.log(ctg);
+  let checkState = ctg[0].checked;
+  if (checkState == true) {
+    ctg[1].checked = true;
+    ctg[2].checked = true;
+  } else if (checkState == false) {
+    ctg[1].checked = false;
+    ctg[2].checked = false;
+  }
+}
+
+function catEn2() {
+  let ctg = document.querySelectorAll(".cat2");
+  console.log(ctg);
+  let checkState = ctg[0].checked;
+  if (checkState == true) {
+    ctg[1].checked = true;
+    ctg[2].checked = true;
+  } else if (checkState == false) {
+    ctg[1].checked = false;
+    ctg[2].checked = false;
+  }
 }
